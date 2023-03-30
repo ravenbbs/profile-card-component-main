@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.profile-card__age,
+.profile-card__location,
+.profile-card__attribute {
+  font-weight: 400;
+}
+
+.profile-card__location {
+  font-size: 1rem;
+}
+
+.profile-card__attribute {
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+}
+
+
+body {
+  display: grid;
+  place-items: center;
+  background: hsl(185, 75%, 39%);
+}
+
+.profile-card__age,
+.profile-card__location,
+.profile-card__attribute {
+  color: hsl(227, 10%, 46%);
+}
+
+.profile-card__name,
+.profile-card__age {
+  display: inline-block;
+}
+
+.profile-card__name {
+  margin-bottom: 0.6rem;
+}
+
+.profile-card__age {
+  margin-left: 0.5rem;
+}
+
+.profile-card__value {
+  margin-bottom: 0.35rem;
+}
+
+.profile-card {
+  width: 90%;
+  max-width: 21.75rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 1rem 3.75rem hsla(227, 10%, 46%, 0.6);
+  animation: inicio ease 1500ms;
+}
+.profile-card__banner {
+  min-height: 9rem;
+  position: relative;
+  background: url("../images/bg-pattern-card.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.profile-card__image {
+  width: 6rem;
+  position: absolute;
+  left: 50%;
+  bottom: -3rem;
+  transform: translateX(-50%);
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+.profile-card__details, .profile-card__stats {
+  background: #fff;
+}
+.profile-card__details {
+  padding: 4.5rem 0 1.5rem;
+}
+.profile-card__stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+  padding: 1.5rem 3rem;
+  border-top: 0.5px solid hsla(0, 0%, 59%, 0.25);
+}
+.profile-card__stats > * {
+  flex: 1;
+}
+
+@keyframes inicio {
+  0% {
+    opacity: 0;
+    transform: scale(1.125);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
